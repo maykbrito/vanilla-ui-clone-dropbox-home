@@ -1,6 +1,5 @@
-<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾 <br>
-<img src="https://i.gyazo.com/f73886c2c3ce067796ee701ebb29617d.gif">
-</h1>
+<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾 </h1>
+<p align="center"><img alt="preview" src="https://i.gyazo.com/f73886c2c3ce067796ee701ebb29617d.gif" /></p>
 <p>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
