@@ -1,4 +1,6 @@
-<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾</h1>
+<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾
+<img src="https://i.gyazo.com/f73886c2c3ce067796ee701ebb29617d.gif">
+</h1>
 <p>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -30,7 +32,7 @@ npx lite-server
 * Website: gitshowcase.com/maykbrito
 * Twitter: [@maykbrito](https://twitter.com/maykbrito)
 * Github: [@maykbrito](https://github.com/maykbrito)
-* LinkedIn: [@maykbrito\]](https://linkedin.com/in/maykbrito)
+* LinkedIn: [@maykbrito](https://linkedin.com/in/maykbrito)
 
 ## Show your support
 
