@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾 </h1>
-<p align="center"><img alt="preview" src="https://im7.ezgif.com/tmp/ezgif-7-d456e72cd8fa.gif" /></p>
+<p align="center"><img alt="preview" src="https://im7.ezgif.com/tmp/ezgif-7-1cfa3772a341.gif" /></p>
 <p>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
