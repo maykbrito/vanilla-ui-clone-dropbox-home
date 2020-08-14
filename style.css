@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*, button, input {
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --color-primary: #0d2f81;
+    --color-secondary: #ffe7aa;
+    --color-tertiary: #fff;
+    --color-quaternary: #000;
+
+    --color-blue: #0061ff;
+    --color-border: #bdc4c9;
+}
+
+section {
+    --padding-top: 100px;
+    --padding-bottom: 120px;
+    --heading-font-size: 32px;
+    --content-width: 100%;
+
+    background: var(--bg-color);
+    position: relative;
+}
+
+section.blue {
+    --bg-color: var(--color-primary);
+    --text-color: var(--color-tertiary);
+    --logo-color: var(--color-secondary);
+}
+section.beige {
+    --bg-color: var(--color-secondary);
+    --text-color: var(--color-quaternary);
+    --logo-color: var(--color-primary);
+}
+section.black {
+    --bg-color: var(--color-quaternary);
+    --text-color: var(--color-tertiary);
+    --logo-color: var(--color-blue);
+}
+section.white {
+    --bg-color: var(--color-tertiary);
+    --text-color: var(--color-quaternary);
+    --logo-color: var(--color-blue);
+}
+
+section:first-child {
+    --padding-top: 130px;
+    --heading-font-size: 51px;   
+}
+
+@media (min-width: 1024px) {
+    section:first-child {
+        --content-width: 50%;
+        --heading-font-size: 71px;
+    }
+}
+
+section .content {
+    z-index: 2;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--padding-top)  32px var(--padding-bottom) ;
+}
+
+section .content > h2 {
+    font-size: var(--heading-font-size);
+    color: var(--logo-color);
+    max-width: var(--content-width);
+}
+
+section .content > p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--text-color);
+    max-width: var(--content-width);
+}
+
+/* header */
+.headerwrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    clip: rect(auto, auto, auto, auto)
+
+}
+
+header {
+    background: var(--bg-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 16px 32px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header h1 i::before {
+    height: 32px;
+    font-size: 36px;
+}
+
+header h1 i {
+    color: var(--logo-color);
+}
+
+header h1 span {
+    color: var(--text-color);
+    margin-left: 10px;
+    font-size: 29px;
+}
+
+header button {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header button:hover, 
+header button:focus{
+    text-decoration: underline;
+}
+
+/* SideMenu */
+#sidemenu {
+    z-index: 10;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--color-tertiary);
+
+    transform: translateX(100%);
+
+    transition: 0.4s;
+}
+
+#sidemenu.open {
+    transform: translateX(0);
+}   
+
+@media (min-width: 1024px) {
+    #sidemenu {
+        width: calc(100% / 3);
+        box-shadow: -7px 0 5px -6px rgba(0, 0, 0, 0.075);
+    }
+
+    #sidemenu.scrollOpen {
+        transform: translateX(0);
+    }
+
+    #sidemenu.scrollOpen #close  {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    #sidemenu {
+        width: calc(480px + ((100vw - 1440px) / 2));
+    }
+}
+
+/* Form */
+#menuform {
+    display: flex;
+    flex-direction: column;
+    height: 100%;   
+}
+@media (min-width: 1024px) {
+    #menuform {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    #menuform h1 {
+        opacity: 0;
+    }
+} 
+
+form {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 32px;
+}
+
+form .title {
+    font-size: 25px;
+}
+
+form .subtitle {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+form input {
+    background: var(--color-tertiary);
+    border: 1px solid var(--color-border);
+    padding: 13px 18px;
+    font-size: 14px;
+
+    margin-top: 18px;
+}
+
+form button {
+    margin-top: 18px;
+
+    padding: 13px 18px;
+    font-size: 16px;
+    background-color: var(--color-blue);
+    color: var(--color-tertiary);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: .87;
+
+}
+
+form .terms {
+    font-size: 12px;
+    opacity: .6;
+    margin-top: 4px;
+}
