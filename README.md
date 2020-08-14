@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾
+<h1 align="center">Welcome to vanilla-ui-clone-dropbox-home 🍾 <br>
 <img src="https://i.gyazo.com/f73886c2c3ce067796ee701ebb29617d.gif">
 </h1>
 <p>
